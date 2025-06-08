@@ -8,7 +8,6 @@ tags: [huffman, greedy, algoritma, kompresi]
 ## Apa Itu Huffman Coding?
 
 Huffman Coding adalah algoritma kompresi lossless yang digunakan untuk mengurangi ukuran data dengan mengubah karakter-karakter dalam teks menjadi kode biner yang panjangnya bervariasi. Karakter yang sering muncul diberi kode yang lebih pendek, sedangkan karakter yang jarang muncul diberi kode yang lebih panjang.
-
 Algoritma ini ditemukan oleh David A. Huffman dan merupakan salah satu contoh algoritma *greedy* paling terkenal di bidang pengolahan data dan komunikasi.
 
 ---
