@@ -19,7 +19,10 @@ Artinya, tidak boleh ada dua ratu yang berada di **baris**, **kolom**, atau **di
 Tujuannya: Letakkan 4 ratu di papan 4×4 tanpa saling menyerang.
 
 Salah satu solusi:
-
+. Q . .
+. . . Q
+Q . . .
+. . Q .
 
 Keterangan:  
 `Q` = posisi ratu  
