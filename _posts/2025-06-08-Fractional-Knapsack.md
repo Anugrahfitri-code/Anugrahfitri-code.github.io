@@ -24,30 +24,32 @@ Solusinya menggunakan metode *greedy*, yaitu:
 
 ---
 
-## Implementasi dalam Python
+## Kompleksitas Algoritma
 
-```python
-def fractional_knapsack(capacity, weights, values):
-    # Hitung value per weight
-    items = [(v / w, w, v) for w, v in zip(weights, values)]
-    # Urutkan berdasarkan value per weight, descending
-    items.sort(key=lambda x: x[0], reverse=True)
+- Langkah pengurutan barang berdasarkan rasio nilai per berat memakan waktu sekitar O(n log n), di mana n adalah jumlah barang.
+- Setelah itu, pengambilan barang secara berurutan hanya membutuhkan waktu O(n).
+- Jadi total waktu eksekusi algoritma ini adalah O(n log n).
 
-    total_value = 0.0
-    for ratio, w, v in items:
-        if capacity == 0:
-            break
-        # Ambil sebanyak mungkin
-        amount = min(w, capacity)
-        total_value += amount * ratio
-        capacity -= amount
+---
 
-    return total_value
+## Kelebihan dan Kekurangan
 
-# Contoh penggunaan
-weights = [10, 20, 30]
-values = [60, 100, 120]
-capacity = 50
+**Kelebihan:**
 
-max_value = fractional_knapsack(capacity, weights, values)
-print(f"Nilai maksimum yang bisa diambil: {max_value}")
+- Algoritma ini sangat efisien dan cepat untuk masalah fractional knapsack.
+- Solusinya optimal dan selalu memberikan nilai maksimum.
+
+**Kekurangan:**
+
+- Algoritma ini hanya berlaku jika barang bisa dibagi menjadi bagian-bagian kecil (fractional).  
+- Untuk masalah knapsack biasa yang hanya mengizinkan barang utuh (0/1 knapsack), algoritma ini tidak cocok.
+
+---
+
+## Kesimpulan
+
+Fractional Knapsack adalah contoh klasik penerapan algoritma greedy yang menghasilkan solusi optimal dalam waktu efisien. Dengan memanfaatkan rasio nilai per berat, kita bisa menentukan bagian barang mana yang sebaiknya diambil agar nilai total maksimal.
+
+Jika kamu tertarik mempelajari lebih lanjut, kamu bisa mencoba mengimplementasikan algoritma ini sendiri atau mencari tutorial yang dilengkapi kode contoh.
+
+---
