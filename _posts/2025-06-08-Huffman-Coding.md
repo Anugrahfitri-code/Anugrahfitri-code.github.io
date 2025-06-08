@@ -76,6 +76,7 @@ Kata **ABRACADABRA** jika dikodekan:
 - D → 101  
 
 Maka hasil encoding:  
+0 110 111 0 100 0 101 0 110 111 0
 
 Total bit: **27 bit**
 
