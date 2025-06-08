@@ -6,6 +6,7 @@ tags: [n-queens, backtracking, algoritma, rekursi]
 ---
 
 ## Apa Itu N-Queens Problem?
+...
 
 **N-Queens Problem** adalah tantangan klasik dalam algoritma dan rekayasa perangkat lunak: menempatkan **N buah ratu** di papan catur berukuran **N×N** sedemikian rupa sehingga **tidak ada dua ratu** yang saling menyerang.
 
